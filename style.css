@@ -1,0 +1,115 @@
+body{
+    --color-primary: rgba(40,120,90,0.8);
+    --color-primary-dark: rgb(10,80,10);
+    --color-secondary: rgb(60,60,190);
+    --color-error: rgb(210,40,40);
+    --color-success: rgba(90,150,40,0.8);
+    --border-radius:5px;
+
+    background: linear-gradient(to right, var(--color-primary) ,var(--color-primary-dark));
+    font-size: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container{
+    width: 400px;
+    min-width: 400px;
+    max-height: 600px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0,0,40px rgba(0,0,0,0.2,);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.container .form__button{
+   font: 500 1rem 'Roboto', sans-serif;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form >*:last-child{
+    margin-bottom: 0;
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form_message--error{
+    color: var(--color-error);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__input-error-message{
+    color: var(--color-error);
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+    
+}
+
+.form__input{
+    font-size: 15px;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddddd;
+    outline: none;
+    background-color: #eeeeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus{
+    border-color: var(--color-primary);
+    background-color: #fff;
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    background-color: var(--color-primary);
+    outline: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.form__button:hover{
+    background-color: var(--color-primary-dark);
+}
+
+.form__button:active{
+    transform: scale(0.98);
+}
+
+.form__text{
+    text-align: center;
+}
+
+.form__link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover{
+    text-decoration: underline;
+}
+
+.form--hidden{
+    display: none;
+}
